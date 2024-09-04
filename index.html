@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unificar Planilhas Excel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <header>
+        <nav>
+            <a id="logo" href="index.html">
+                <img src="imagem/logo_clickmassa_4x4-removebg-preview.png" alt="Logo Click Massa" width="100" height="80" />
+            </a>
+            <div id="mod">
+                <button class="theme-toggle" onclick="toggleTheme()">🌞</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Unificar Planilhas Excel</h1>
+        <input type="file" id="upload" accept=".xlsx, .xls" multiple />
+        <button id="export" style="display:none;">Exportar Unificado</button>
+        <table id="output-table"></table>
+    </main>
+
+    <!-- Rodapé com links e mídias sociais -->
+    <footer>
+      <div class="footer-content">
+        <div class="social-media">
+          <a
+            id="social"
+            href="https://www.facebook.com/profile.php?id=100078927514843&mibextid=ZbWKwL"
+            target="_blank"
+            ><img
+              src="imagem/facebook (1).png"
+              alt="Logo-Facebook"
+              width="35px"
+              height="35px"
+          /></a>
+          <a
+            id="social"
+            href="https://www.youtube.com/channel/UCaBhP1iyy-8XC27cfFe3gHg"
+            target="_blank"
+            ><img
+              src="imagem/youtube.png"
+              alt="Logo-Youtube"
+              width="35px"
+              height="35px"
+          /></a>
+          <a
+            id="social"
+            href="https://www.instagram.com/clickmassaoficial?igsh=MWttbHlqdWsyMXl6Yw=="
+            target="_blank"
+            ><img
+              src="imagem/instagram.png"
+              alt="Logo-Intagram"
+              width="35px"
+              height="35px"
+          /></a>
+        </div>
+      </div>
+      <p>© 2024 ClickMassa - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Include SheetJS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
